@@ -1,0 +1,296 @@
+<!doctype html><html lang="sk"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Glow by Kristína · obočie, mihalnice a pleť v Poprade — neoficiálny návrh</title>
+<meta name="description" content="Neoficiálny návrh webu pre Glow by Kristína, Štefánikova 98/66, Poprad: laminácia obočia, lifting mihalníc, čistenie pleti, Kobido masáž, depilácia.">
+<meta name="theme-color" content="#1A1315">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Lexend:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#1A1315;     /* zem: tmavé štúdio */
+  --night-2:#221A1C;
+  --glow:#FFF1E4;      /* materiál: teplé svetlo prstenca */
+  --peach:#F1B79C;     /* akcent */
+  --txt:#EDE3DD;
+  --dim:#A8978F;
+  --hair:rgba(237,227,221,.14);
+  --script:"Allura",cursive;
+  --sans:"Lexend",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--night);color:var(--txt);font:300 17px/1.6 var(--sans)}
+img{max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--peach);outline-offset:3px;border-radius:3px}
+.in{width:min(1160px,100% - 48px);margin-inline:auto}
+.k{font:500 11.5px/1.3 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--peach)}
+.tn{font-variant-numeric:tabular-nums}
+.u{text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .2s}
+.u:hover{background-size:100% 1px}
+
+.bar{background:var(--glow);color:var(--night);font:400 13.5px/1.45 var(--sans);text-align:center;padding:9px 18px}
+
+.hd .in{display:flex;align-items:center;gap:30px;height:78px;border-bottom:1px solid var(--hair)}
+.logo{font:400 38px/1 var(--script);text-decoration:none;color:var(--glow);padding-top:6px}
+.hd nav{display:flex;gap:28px;margin-left:auto;font-size:15px}
+.hd nav a{padding:12px 0}
+.hd .ph{font:400 15px var(--sans);text-decoration:none;padding:11px 18px;border:1px solid var(--hair);border-radius:999px}
+.hd .ph:hover{border-color:var(--peach);color:var(--peach)}
+
+/* hero: prstenec */
+.hero{position:relative;overflow:hidden}
+.hero .in{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:40px;min-height:min(600px,82vh);padding:40px 0 56px}
+.hero h1{font:400 clamp(84px,10vw,128px)/.86 var(--script);color:var(--glow);margin:22px 0 26px;letter-spacing:.005em}
+.hero h1 span{display:block;padding-left:.55em;white-space:nowrap}
+.hero p.lead{max-width:30em;font-size:18.5px;color:var(--txt)}
+.acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.b{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border-radius:999px;font:400 16px var(--sans);text-decoration:none;transition:background-color .2s,color .2s}
+.b.on{background:var(--peach);color:var(--night);font-weight:500}
+.b.on:hover{background:var(--glow)}
+.b.off{border:1px solid rgba(237,227,221,.4)}
+.b.off:hover{border-color:var(--glow);color:var(--glow)}
+.meta{margin-top:30px;font-size:14px;color:var(--dim)}
+.meta b{color:var(--txt);font-weight:400}
+
+.ring{position:relative;width:100%;max-width:470px;justify-self:end}
+.ring svg{display:block;width:100%;height:auto;overflow:visible}
+.ring .core{position:absolute;left:0;right:0;top:40.5%;transform:translateY(-50%);text-align:center}
+.core strong{display:block;font:300 clamp(52px,6vw,76px)/1 var(--sans);color:var(--glow);letter-spacing:-.02em}
+.core span{display:block;font-size:13.5px;color:var(--dim);margin-top:8px;line-height:1.4}
+
+/* cenník */
+.list{padding:clamp(56px,8vw,104px) 0 clamp(40px,5vw,64px)}
+.top{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:46px}
+h2{font:300 clamp(36px,4.6vw,58px)/1.05 var(--sans);letter-spacing:-.025em;color:var(--glow);margin-top:12px}
+h2 em{font:400 1.25em/0 var(--script);color:var(--peach);font-style:normal}
+.legend{font-size:14px;color:var(--dim);max-width:24em}
+.legend i{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--glow);box-shadow:0 0 10px 2px rgba(255,226,200,.6);margin-right:8px;vertical-align:1px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:28px 64px}
+.grp h3{font:500 12px/1.3 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--dim);padding-bottom:14px;border-bottom:1px solid var(--hair);display:flex;justify-content:space-between}
+.grp + .grp{margin-top:40px}
+.rows{list-style:none;padding:0}
+.rows li{display:grid;grid-template-columns:14px 1fr auto auto;gap:14px;align-items:baseline;padding:14px 10px 14px 4px;border-bottom:1px solid var(--hair);transition:background-color .2s}
+.rows .d{width:9px;height:9px;border-radius:50%;border:1px solid rgba(237,227,221,.45);transform:translateY(-1px);transition:background-color .2s,box-shadow .2s}
+.rows .t{font-size:13.5px;color:var(--dim);white-space:nowrap}
+.rows .p{font-weight:400;color:var(--glow);white-space:nowrap;min-width:4.6em;text-align:right}
+.rows li:hover{background:rgba(255,241,228,.045)}
+.rows li:hover .d,.rows li.lit .d{background:var(--glow);border-color:var(--glow);box-shadow:0 0 10px 2px rgba(255,226,200,.55)}
+.rows li.lit .n{color:var(--glow)}
+.note{font-size:14px;color:var(--dim);margin-top:30px}
+
+/* Kobido — rozsvietený blok */
+.kobido{background:var(--glow);color:var(--night);padding:clamp(56px,7vw,96px) 0;position:relative;overflow:hidden}
+.kobido::before{content:"";position:absolute;width:760px;height:760px;border-radius:50%;left:-260px;top:50%;transform:translateY(-50%);border:56px solid rgba(241,183,156,.28)}
+.kobido .in{position:relative;display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(32px,6vw,90px);align-items:center}
+.kobido .k{color:#9A5A40}
+.kobido h2{font:400 clamp(96px,12vw,168px)/.8 var(--script);color:var(--night);margin:16px 0 14px;letter-spacing:0;padding-left:.12em}
+.kobido .sub{font-size:19px;max-width:20em;color:#4A3A3A}
+.kobido .rows li{border-color:rgba(26,19,21,.15);padding-top:17px;padding-bottom:17px}
+.kobido .rows .d{border-color:rgba(26,19,21,.5)}
+.kobido .rows .t{color:#6C5A55}
+.kobido .rows .p{color:var(--night);font-weight:500}
+.kobido .rows li:hover{background:rgba(26,19,21,.04)}
+.kobido .rows li:hover .d,.kobido .rows li.lit .d{background:#C9734F;border-color:#C9734F;box-shadow:0 0 10px 2px rgba(201,115,79,.4)}
+.kobido .rows li.lit .n{color:var(--night);font-weight:400}
+.kobido .note{color:#6C5A55}
+
+/* depilácia */
+.dep{padding:clamp(56px,7vw,96px) 0 0}
+.dep .rows{columns:2;column-gap:64px}
+.dep .rows li{break-inside:avoid}
+
+/* slová salónu + kontakt */
+.words{padding:clamp(64px,8vw,112px) 0}
+.words blockquote{font:300 clamp(24px,2.8vw,34px)/1.4 var(--sans);color:var(--glow);max-width:30em;letter-spacing:-.01em}
+.words cite{display:block;font:400 14px var(--sans);color:var(--dim);margin-top:18px;font-style:normal}
+.contact{border-top:1px solid var(--hair);padding:clamp(48px,6vw,80px) 0}
+.contact .in{display:grid;grid-template-columns:repeat(4,1fr);gap:36px}
+.contact h3{font:500 11.5px/1.3 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--peach);margin-bottom:12px}
+.contact p{font-size:16px}
+.contact small{display:block;font-size:13.5px;color:var(--dim);margin-top:6px;line-height:1.45}
+.contact .big{font-size:22px;text-decoration:none;font-weight:400;color:var(--glow)}
+.contact .lk a{display:inline-block;padding:3px 0;margin-right:16px}
+
+footer{border-top:1px solid var(--hair);padding:26px 0 34px;font-size:13.5px;color:var(--dim)}
+footer .in{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer .lg{font:400 26px/1 var(--script);color:var(--txt)}
+.mb{display:none}
+
+@media (max-width:920px){
+  .hero .in{grid-template-columns:1fr;min-height:0;padding-top:28px;gap:8px}
+  .ring{justify-self:center;max-width:360px;order:-1}
+  .cols,.kobido .in{grid-template-columns:1fr}
+  .contact .in{grid-template-columns:1fr 1fr}
+  .kobido::before{left:auto;right:-420px;top:-200px;transform:none}
+}
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+  .in{width:calc(100% - 32px)}
+  .hd nav,.hd .ph{display:none}
+  .hd .in{height:64px}
+  .ring{max-width:250px;margin-bottom:-4px}
+  .core strong{font-size:46px}
+  .core span{font-size:12px;margin-top:4px}
+  .hero h1{font-size:82px;margin:14px 0 20px}
+  .hero h1 span{padding-left:.6em}
+  .hero p.lead{font-size:17px}
+  .acts .b{flex:1 1 100%}
+  .rows li{grid-template-columns:14px 1fr auto;grid-template-areas:"d n p" ". t p";gap:2px 12px;padding:12px 2px}
+  .rows .d{grid-area:d}.rows .n{grid-area:n}.rows .t{grid-area:t}.rows .p{grid-area:p;align-self:center;min-width:0}
+  .dep .rows{columns:1}
+  .contact .in{grid-template-columns:1fr;gap:28px}
+  .mb{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;inset:auto 0 0 0;z-index:9;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(26,19,21,.96);border-top:1px solid var(--hair)}
+  .mb a{display:flex;align-items:center;justify-content:center;min-height:50px;border-radius:999px;font:500 16px var(--sans);text-decoration:none}
+  .mb a:first-child{background:var(--peach);color:var(--night)}
+  .mb a:last-child{border:1px solid rgba(237,227,221,.4)}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<p class="bar" role="note">Neoficiálny návrh — nie je to oficiálny web podniku · ukážka od webdavid.sk, objednávky ani rezervácie tu nefungujú</p>
+
+<header class="hd">
+  <div class="in">
+    <a class="logo" href="#">Glow by Kristína</a>
+    <nav aria-label="Navigácia"><a class="u" href="#cennik">Cenník</a><a class="u" href="#kobido">Kobido</a><a class="u" href="#kontakt">Kontakt</a></nav>
+    <a class="ph tn" href="tel:+421948912898">0948 912 898</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="in">
+    <div>
+      <p class="k">Kozmetický salón · Poprad</p>
+      <h1>Glow <span>by Kristína</span></h1>
+      <p class="lead">Úprava a laminácia obočia, lifting mihalníc, čistenie pleti a liftingová masáž tváre Kobido. Na objednanie, Štefánikova 98/66.</p>
+      <div class="acts">
+        <a class="b on" href="tel:+421948912898">Zavolať a objednať sa</a>
+        <a class="b off" href="https://www.notino.sk/salony/glow-by-kristina/" rel="noopener">Rezervovať cez Notino</a>
+      </div>
+      <p class="meta"><b>22 služieb</b> s cenou · hodnotenie 5,0 podľa Notino k 1. 10. 2026</p>
+    </div>
+    <div class="ring">
+      <svg viewBox="0 0 400 470" aria-hidden="true" focusable="false">
+        <defs>
+          <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#FFE6D0" stop-opacity=".16"/>
+            <stop offset=".62" stop-color="#FFE6D0" stop-opacity=".22"/>
+            <stop offset=".78" stop-color="#F1B79C" stop-opacity=".12"/>
+            <stop offset="1" stop-color="#F1B79C" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="tube" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#FFFFFF"/><stop offset=".5" stop-color="#FFEBDA"/><stop offset="1" stop-color="#F6CBB2"/>
+          </linearGradient>
+          <filter id="bl" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="12"/></filter>
+        </defs>
+        <circle cx="200" cy="190" r="200" fill="url(#halo)"/>
+        <rect x="194" y="330" width="12" height="140" fill="#3A2E30"/>
+        <rect x="182" y="322" width="36" height="16" rx="4" fill="#4A3C3E"/>
+        <circle cx="200" cy="190" r="140" fill="none" stroke="#FFE3CC" stroke-width="40" opacity=".55" filter="url(#bl)"/>
+        <circle cx="200" cy="190" r="140" fill="none" stroke="url(#tube)" stroke-width="26"/>
+        <circle cx="200" cy="190" r="152" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="1"/>
+        <circle cx="200" cy="190" r="125" fill="none" stroke="#3A2E30" stroke-width="3"/>
+      </svg>
+      <div class="core"><strong class="tn">5,0</strong><span>★ Notino<br>25 hodnotení</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="list" id="cennik" aria-labelledby="h-cennik">
+  <div class="in">
+    <div class="top">
+      <div><p class="k">Cenník</p><h2 id="h-cennik">Obočie, mihalnice <em>&amp;</em> pleť</h2></div>
+      <p class="legend"><i></i>rozsvietené sú služby s menom Glow. Ceny podľa profilu na Notino (1.&nbsp;10.&nbsp;2026), overiť.</p>
+    </div>
+    <div class="cols">
+      <div class="grp">
+        <h3><span>Riasy a obočie</span><span class="tn">7</span></h3>
+        <ul class="rows tn">
+          <li class="lit"><i class="d"></i><span class="n">Glow duo WOW lifting + úprava obočia</span><span class="t">1 h 30 min</span><span class="p">45 €</span></li>
+          <li><i class="d"></i><span class="n">Wowlift mihalníc + laminácia obočia</span><span class="t">1 h 50 min</span><span class="p">65 €</span></li>
+          <li><i class="d"></i><span class="n">WOW Lifting mihalníc</span><span class="t">1 h 30 min</span><span class="p">40 €</span></li>
+          <li><i class="d"></i><span class="n">Laminácia obočia s farbením</span><span class="t">1 h</span><span class="p">38 €</span></li>
+          <li><i class="d"></i><span class="n">Laminácia obočia</span><span class="t">50 min</span><span class="p">35 €</span></li>
+          <li><i class="d"></i><span class="n">Úprava a farbenie obočia</span><span class="t">25 min</span><span class="p">15 €</span></li>
+          <li><i class="d"></i><span class="n">Úprava obočia</span><span class="t">15 min</span><span class="p">12 €</span></li>
+        </ul>
+      </div>
+      <div>
+        <div class="grp">
+          <h3><span>Kozmetické ošetrenie</span><span class="tn">2</span></h3>
+          <ul class="rows tn">
+            <li><i class="d"></i><span class="n">Šťastná hodinka krásy</span><span class="t">1 h</span><span class="p">40 €</span></li>
+            <li><i class="d"></i><span class="n">Oxy Bubble terapia</span><span class="t">1 h 30 min</span><span class="p">55–60 €</span></li>
+          </ul>
+        </div>
+        <div class="grp">
+          <h3><span>Čistenie pleti</span><span class="tn">1</span></h3>
+          <ul class="rows tn">
+            <li><i class="d"></i><span class="n">Cesta k hodvábnej pleti – hĺbkové čistenie pleti</span><span class="t">1 h 30 min</span><span class="p">50–55 €</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="kobido" id="kobido" aria-labelledby="h-kobido">
+  <div class="in">
+    <div>
+      <p class="k">Kozmetické masáže</p>
+      <h2 id="h-kobido">Kobido</h2>
+      <p class="sub">Luxusná liftingová masáž tváre — samostatne, ako dvojhodinový rituál alebo v balíku 3+1.</p>
+    </div>
+    <div>
+      <ul class="rows tn">
+        <li><i class="d"></i><span class="n">Kobido – japonský luxus</span><span class="t">1 h 30 min</span><span class="p">65 €</span></li>
+        <li class="lit"><i class="d"></i><span class="n">Prestige glow rituál – Kobido masáž</span><span class="t">2 h</span><span class="p">120 €</span></li>
+        <li><i class="d"></i><span class="n">Balík kobido masáží 3+1 zadarmo</span><span class="t">1 h 30 min</span><span class="p">210 €</span></li>
+        <li><i class="d"></i><span class="n">Tejpovanie tváre po Kobido masáži</span><span class="t">15 min</span><span class="p">12 €</span></li>
+      </ul>
+      <p class="note">Tejpovanie je na Notino vedené v kategórii Tejping. Ceny podľa Notino (1.&nbsp;10.&nbsp;2026), overiť.</p>
+    </div>
+  </div>
+</section>
+
+<section class="dep" aria-labelledby="h-dep">
+  <div class="in">
+    <div class="grp">
+      <h3 id="h-dep"><span>Depilácia</span><span class="tn">7</span></h3>
+      <ul class="rows tn">
+        <li><i class="d"></i><span class="n">Depilácia podpazušia</span><span class="t">45 min</span><span class="p">12 €</span></li>
+        <li><i class="d"></i><span class="n">Depilácia bikín</span><span class="t">45 min – 1 h</span><span class="p">12 €</span></li>
+        <li><i class="d"></i><span class="n">Depilácia rúk</span><span class="t">45 min – 1 h</span><span class="p">15 €</span></li>
+        <li><i class="d"></i><span class="n">Depilácia predkolenia</span><span class="t">1 h 30 min</span><span class="p">18 €</span></li>
+        <li><i class="d"></i><span class="n">Depilácia stehien</span><span class="t">1 h 10 min</span><span class="p">20 €</span></li>
+        <li><i class="d"></i><span class="n">Depilácia celých nôh</span><span class="t">2 h</span><span class="p">32 €</span></li>
+        <li><i class="d"></i><span class="n">Balík depilácia – nohy, bikiny, podpazušie</span><span class="t">2 h</span><span class="p">55 €</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="words" aria-label="Slovami salónu">
+  <div class="in">
+    <p class="k">Zo slov salónu</p>
+    <blockquote style="margin-top:18px">„…s láskou k detailom a prirodzenej kráse som si splnila sen v mojom salóne v Poprade. Špecializujem sa na úpravu obočia, lamináciu obočia a lashlift mihalníc.“<cite>— z profilu salónu na Notino</cite></blockquote>
+  </div>
+</section>
+
+<section class="contact" id="kontakt" aria-label="Kontakt">
+  <div class="in">
+    <div><h3>Adresa</h3><p>Štefánikova 98/66<br>058 01 Poprad</p><small><a class="u" href="https://www.google.com/maps/search/Glow+by+Krist%C3%ADna+Poprad" rel="noopener">Otvoriť v Mapách Google</a></small></div>
+    <div><h3>Telefón</h3><p><a class="big tn u" href="tel:+421948912898">+421 948 912 898</a></p><small>alebo rezervácia cez <a class="u" href="https://www.notino.sk/salony/glow-by-kristina/" rel="noopener">profil na Notino</a></small></div>
+    <div><h3>Hodiny</h3><p>Otvorené na objednanie</p><small>podľa Notino; konkrétne dni a časy overiť</small></div>
+    <div class="lk"><h3>Sledujte</h3><p><a class="u" href="https://www.instagram.com/glowby_kristina/" rel="noopener">Instagram</a><a class="u" href="https://www.facebook.com/profile.php?id=61574625286693" rel="noopener">Facebook</a></p><small>odkazy podľa verejných údajov, overiť</small></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="in"><span class="lg">Glow by Kristína</span><span>Neoficiálny návrh webu · webdavid.sk · 2026</span></div></footer>
+
+<nav class="mb" aria-label="Rýchle akcie"><a href="tel:+421948912898">Zavolať</a><a href="https://www.notino.sk/salony/glow-by-kristina/" rel="noopener">Rezervovať</a></nav>
